@@ -1,11 +1,3 @@
-"""
-Nos envían un bloque TR31:
-D0144D0AB00S000042766B9265B2DF93AE6E29B58135B77A2F616C8D515ACDBE6A5626F79FA7B4071E9EE1423C6D7970FA2B965D18B23922B5B2E5657495E03CD857FD37018E111B
-Donde la clave de transporte para desenvolver (unwrap) el bloque es:
-A1A10101010101010101010101010102
-¿Con qué algoritmo se ha protegido el bloque de clave? ¿Para qué algoritmo se ha definido la clave? ¿Para qué modo de uso se ha generado? ¿Es exportable? ¿Para qué se puede usar la clave?¿Qué valor tiene la clave?
-
-"""
 from psec import tr31
 
 kbpk_b = bytes.fromhex("A1A10101010101010101010101010102")
