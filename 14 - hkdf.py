@@ -1,18 +1,7 @@
-"""
-Necesitamos generar una nueva clave AES, usando para ello una HKDF 
-(HMAC based Extractand-Expand key derivation function) con un hash SHA-512. 
-La clave maestra requerida se encuentra en el keystore con la etiqueta 
-“cifrado-sim-aes-256”. La clave obtenida dependerá de un identificador de 
-dispositivo, en este caso tendrá el valor en hexadecimal: 
-e43bb4067cbcfab3bec54437b84bef4623e345682d89de9948fbb0afedc461a3
-¿Qué clave se ha obtenido? 
-
-"""
 import os
 import jks
 from Crypto.Protocol.KDF import HKDF
 from Crypto.Hash import SHA512
-import secrets
 
 # Importar la clave desde KeyStore
 path = os.path.dirname(__file__)
