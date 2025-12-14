@@ -3,7 +3,7 @@ from Crypto.Signature.pkcs1_15 import PKCS115_SigScheme
 from Crypto.Hash import SHA256
 import os
 
-# Obtenemos la firma
+# Obtenemos la clave
 my_path = os.path.abspath(os.getcwd())
 path_file_priv = os.path.join(my_path, "files","clave-rsa-oaep-priv.pem")
 keypriv = RSA.importKey(open(path_file_priv).read())
@@ -49,7 +49,7 @@ with open(path_file_priv, "rb") as f:
 seed = priv_bytes[:32]
 sk = SigningKey(seed)
 
-# Firmamos y obtenemos la clave
+# Firmamos y obtenemos la firma
 firmado = sk.sign(mensaje_bytes)
 firma = firmado.signature
 print(f"La firma es {firma.hex().upper()}")
