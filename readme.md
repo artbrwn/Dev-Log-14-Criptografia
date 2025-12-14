@@ -6,7 +6,7 @@ Este repositorio contiene la **práctica del módulo de Criptografía**, incluye
 
 El documento principal de la práctica, donde se recogen los **enunciados, el desarrollo de los ejercicios y las explicaciones**, se encuentra en el siguiente archivo dentro del repositorio:
 
-**[Práctica_Criptografía.pdf](./Práctica_Criptografía.pdf)**
+**[Práctica_Criptografía.pdf](github.com/artbrwn/dev-log-14-criptografia/blob/main/pr%c3%a1ctica_%20criptograf%c3%ada.pdf)**
 
 
 ## 📁 Contenido del repositorio
